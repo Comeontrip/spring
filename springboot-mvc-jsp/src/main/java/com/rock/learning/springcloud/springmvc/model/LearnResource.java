@@ -1,0 +1,50 @@
+package com.rock.learning.springcloud.springmvc.model;
+
+import java.io.Serializable;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "LearnResource")
+public class LearnResource implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+
+	private String author;
+	private String title;
+	private String url;
+	
+	public LearnResource() {
+		super();
+	}
+
+	public LearnResource(String author, String title, String url) {
+		this.author = author;
+		this.title = title;
+		this.url = url;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+}
